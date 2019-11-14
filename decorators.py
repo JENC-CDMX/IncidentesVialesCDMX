@@ -1,10 +1,11 @@
 import os 
+
 from pymongo import MongoClient
 
 host = os.environ['MONGO_HOST']
 port = int(os.environ['MONGO_PORT'])
 
-def (function):
+def open_close_connection(function):
 
     def wrapper(*args, **kwargs):
 
